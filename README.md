@@ -1,4 +1,3 @@
-
 # Payvala
 
 [![Build Status](https://scrutinizer-ci.com/g/circlecreative/payvala-php-sdk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/circlecreative/payvala-php-sdk)
@@ -7,44 +6,44 @@
 [![Total Downloads](https://poser.pugx.org/circlecreative/payvala-php-sdk/downloads)](https://packagist.org/packages/circlecreative/payvala-php-sdk)
 [![License](https://poser.pugx.org/circlecreative/payvala-php-sdk/license)](https://packagist.org/packages/circlecreative/payvala-php-sdk)
 
-`Payvala` adalah library PHP untuk mengirimkan pesan melalui API Payvala. Library ini menggunakan `GuzzleHttp\Client` untuk melakukan komunikasi HTTP dengan API Payvala.
+`Payvala` is a PHP library to send messages through the Payvala API. This library uses `GuzzleHttp\Client` for HTTP communication with the Payvala API.
 
-## Fitur
+## Features
 
-- **Otentikasi Mudah**: Mendukung otentikasi dengan `accessKey`, `accessKeyId`, dan `authCode`.
-- **Pengiriman Pesan**: Kirim pesan dengan berbagai parameter yang fleksibel.
-- **Penanganan Respons**: Mendapatkan respons yang jelas berupa kode dan pesan dari API.
+- **Easy Authentication**: Supports authentication with `accessKey`, `accessKeyId`, and `authCode`.
+- **Message Sending**: Send messages with flexible parameters.
+- **Response Handling**: Get clear responses with code and messages from the API.
 
-## Instalasi
+## Installation
 
-Untuk menginstal `Payvala`, Anda dapat menggunakan Composer:
+To install `Payvala`, you can use Composer:
 
 ```bash
 composer require circlecreative/payvala-php-sdk
 ```
 
-Jika Anda menggunakan PHP tanpa framework, Anda bisa mengikutkan file autoload:
+If you are using PHP without a framework, you can include the autoload file:
 
 ```php
 require_once('path/to/circlecreative/payvala-php-sdk/src/autoload.php');
 ```
 
-## Penggunaan
+## Usage
 
-### Menggunakan Payvala
+### Using Payvala
 
 ```php
 use App\Services\Payvala;
 
-// Membuat instance dari Payvala
+// Create an instance of Payvala
 $service = new Payvala();
 
-// Menetapkan kredensial untuk otentikasi
+// Set credentials for authentication
 $service->setAccessKey('your_access_key');
 $service->setAccessKeyId('your_access_key_id');
 $service->setAuthCode('your_auth_code');
 
-// Mengirim pesan
+// Send a message
 $response = $service->sendMessage([
     'requestId' => 'unique_request_id',
     'deviceSn' => 'device_serial_number',
@@ -58,7 +57,7 @@ $response = $service->sendMessage([
     'transactingBank' => 'bank_name'
 ]);
 
-// Menangani respons
+// Handle the response
 if (isset($response['error'])) {
     echo "Error: " . $response['error'];
 } else {
@@ -69,25 +68,25 @@ if (isset($response['error'])) {
 }
 ```
 
-## Metode
+## Methods
 
 ### `setAccessKey(string $accessKey)`
 
-Menetapkan `accessKey` untuk otentikasi.
+Sets the `accessKey` for authentication.
 
 ### `setAccessKeyId(string $accessKeyId)`
 
-Menetapkan `accessKeyId` untuk otentikasi.
+Sets the `accessKeyId` for authentication.
 
 ### `setAuthCode(string $authCode)`
 
-Menetapkan `authCode` untuk otentikasi.
+Sets the `authCode` for authentication.
 
 ### `sendMessage(array $data): array`
 
-Mengirim pesan melalui API Payvala dengan data yang disediakan.
+Sends a message via the Payvala API with the provided data.
 
-### Respons API
+### API Response
 
 ```php
 [
@@ -95,13 +94,13 @@ Mengirim pesan melalui API Payvala dengan data yang disediakan.
     'message' => 'response_message',
     'requestId' => 'returned_request_id',
     'nonce' => 'response_nonce',
-    'error' => 'error_message' // Jika ada kesalahan
+    'error' => 'error_message' // If any error occurs
 ]
 ```
 
-## Daftar Kode Respons
+## Response Code List
 
-| Kode  | Pesan                                                                                      |
+| Code  | Message                                                                                      |
 |-------|---------------------------------------------------------------------------------------------|
 | 0001  | Delivered to Device                                                                         |
 | 0002  | Broadcasted by Device                                                                       |
@@ -119,20 +118,20 @@ Mengirim pesan melalui API Payvala dengan data yang disediakan.
 | 3003  | API overflow                                                                                |
 | 9000  | Other Error                                                                                 |
 
-## Lisensi
+## License
 
-Library ini dilisensikan di bawah [MIT License](LICENSE).
+This library is licensed under the [MIT License](LICENSE).
 
-## Kontribusi
+## Contributing
 
-Kami menyambut kontribusi dari komunitas. Jika Anda ingin berkontribusi, harap lakukan hal berikut:
+We welcome contributions from the community. If you'd like to contribute, please follow these steps:
 
-1. Fork repositori ini
-2. Buat branch untuk fitur baru (`git checkout -b feature-new-feature`)
-3. Commit perubahan Anda (`git commit -am 'Add new feature'`)
-4. Push ke branch (`git push origin feature-new-feature`)
-5. Buka pull request
+1. Fork this repository
+2. Create a branch for your new feature (`git checkout -b feature-new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature-new-feature`)
+5. Open a pull request
 
-## Kontak
+## Contact
 
-Jika Anda memiliki pertanyaan atau membutuhkan bantuan lebih lanjut, silakan buat *issue* di repositori GitHub atau hubungi kami melalui email.
+If you have any questions or need further assistance, please open an *issue* on the GitHub repository or contact us via email.
