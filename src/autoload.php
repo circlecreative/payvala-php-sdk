@@ -1,10 +1,10 @@
 <?php
 /**
- * Advanced PayVala SDK PHP Library
+ * Official PayVala Speaker PHP SDK
  *
  * MIT License
  *
- * Copyright (c) 2024 CircleCreative
+ * Copyright (c) 2024 PT. Lingkar Kreasi (Circle Creative)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,8 +24,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * @author         CircleCreative
- * @copyright      Copyright (c) 2024, CircleCreative
+ * @author         PT. Lingkar Kreasi (Circle Creative)
+ * @copyright      Copyright (c) 2024, PT. Lingkar Kreasi (Circle Creative)
  * @filesource
  */
 
