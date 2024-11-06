@@ -1,4 +1,4 @@
-# Payvala
+# PayVala SoundBox PHP SDK
 
 [![Build Status](https://scrutinizer-ci.com/g/circlecreative/payvala-php-sdk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/circlecreative/payvala-php-sdk)
 [![Code Quality](https://scrutinizer-ci.com/g/circlecreative/payvala-php-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/circlecreative/payvala-php-sdk)
