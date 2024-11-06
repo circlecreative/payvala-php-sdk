@@ -6,7 +6,7 @@
 [![Total Downloads](https://poser.pugx.org/circlecreative/payvala-php-sdk/downloads)](https://packagist.org/packages/circlecreative/payvala-php-sdk)
 [![License](https://poser.pugx.org/circlecreative/payvala-php-sdk/license)](https://packagist.org/packages/circlecreative/payvala-php-sdk)
 
-`Payvala` is a PHP library to send messages through the Payvala API. This library uses `GuzzleHttp\Client` for HTTP communication with the Payvala API.
+`Payvala PHP SDK` is a PHP library to send messages through the PayVala API into PayVala SoundBox Device. This library uses `GuzzleHttp\Client` for HTTP communication with the Payvala API.
 
 ## Features
 
