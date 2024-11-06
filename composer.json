@@ -1,0 +1,41 @@
+{
+  "name": "circlecreative/payvala-php-sdk",
+  "description": "Advanced Payvala API PHP Class",
+  "license": "MIT",
+  "type": "php-class",
+  "keywords": [
+    "payvala-php-sdk",
+    "api"
+  ],
+  "authors": [
+    {
+      "name": "Steeve Andrian",
+      "email": "steevenz@steevenz.com",
+      "homepage": "http://www.steevenz.com",
+      "role": "PHP Programmer"
+    },
+    {
+      "name": "Sofronius Ruddy Balu Dau",
+      "email": "sofroniusrudib@gmail.com",
+      "homepage": "https://sofronz.github.io/portofolio/",
+      "role": "PHP Programmer"
+    }
+  ],
+  "support": {
+    "email": "steevenz@steevenz.com",
+    "issues": "https://github.com/circlecreative/payvala-php-sdk/issues"
+  },
+  "links": {
+    "info": "https://github.com/circlecreative/payvala-php-sdk",
+    "wiki": "https://github.com/circlecreative/payvala-php-sdk/wiki"
+  },
+  "require": {
+    "php": ">=8.1.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "autoload": {
+    "files": [
+      "src/Payvala.php"
+    ]
+  }
+}
