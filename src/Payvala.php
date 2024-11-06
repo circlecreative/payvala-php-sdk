@@ -1,6 +1,6 @@
 <?php
 /**
- * Official PayVala Speaker PHP SDK
+ * Official PayVala SoundBox PHP SDK
  *
  * MIT License
  *
