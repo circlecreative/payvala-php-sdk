@@ -86,6 +86,24 @@ Sets the `authCode` for authentication.
 
 Sends a message via the Payvala API with the provided data.
 
+## Template Code List
+
+| Code  | Description                                                                           |
+|-------|---------------------------------------------------------------------------------------|
+| 01    | Amount Only                                                                           |
+| 02    | Amount broadcast with Payer Name (not in use as of now)                               |
+| 10    | Test Message                                                                          |
+
+
+## Language Code List
+
+| Code  | Description                                                                           |
+|-------|---------------------------------------------------------------------------------------|
+| DE    | Default                                                                               |
+| EN    | English                                                                               |
+| ID    | Indonesia                                                                             |
+
+
 ### API Response
 
 ```php
